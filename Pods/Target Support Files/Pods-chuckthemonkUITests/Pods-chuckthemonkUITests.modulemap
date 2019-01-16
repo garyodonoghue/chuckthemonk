@@ -1,0 +1,6 @@
+framework module Pods_chuckthemonkUITests {
+  umbrella header "Pods-chuckthemonkUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

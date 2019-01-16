@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseAuth
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        // Load data as json
+        // https://chuck-the-monk.firebaseio.com/.json
+        
     }
-
-
 }
 
