@@ -9,7 +9,10 @@ target 'chuckthemonk' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-
+  pod 'Alamofire', '~> 5.0.0.beta.1'   # Networking
+  pod 'SwiftyJSON'                     # JSON parsing
+  pod 'HockeySDK', '~> 5.1.4'          # HockeyApp (private logging)
+  
   target 'chuckthemonkTests' do
     inherit! :search_paths
     # Pods for testing

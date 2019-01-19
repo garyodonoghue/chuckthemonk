@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.0.0.beta.1)
   - Firebase/Auth (5.11.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.4)
@@ -59,20 +60,28 @@ PODS:
   - GoogleUtilities/UserDefaults (5.3.4):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
+  - HockeySDK (5.1.4):
+    - HockeySDK/DefaultLib (= 5.1.4)
+  - HockeySDK/DefaultLib (5.1.4)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0.beta.1)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - HockeySDK (~> 5.1.4)
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -83,10 +92,13 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - HockeySDK
     - leveldb-library
     - nanopb
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
   Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseAuth: 504b198ceb3472dca5c65bb95544ea44cfc9439e
@@ -97,9 +109,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  HockeySDK: 15afe6bc0a5bfe3a531fd73dbf082095f37dac3b
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 54c5b3568f158ede7c6859b24296628606e62abf
+PODFILE CHECKSUM: 05f4feee6f07204e0c1fe306f969e0411843b994
 
 COCOAPODS: 1.5.3

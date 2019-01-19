@@ -16,6 +16,7 @@
 		4EA4FF7821EFD5C8005E2291 /* chuckthemonkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF7721EFD5C8005E2291 /* chuckthemonkTests.swift */; };
 		4EA4FF8321EFD5C8005E2291 /* chuckthemonkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF8221EFD5C8005E2291 /* chuckthemonkUITests.swift */; };
 		4EA4FF9121EFD726005E2291 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */; };
+		4EB8B57621F39E5A007FFA75 /* DataAccessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */; };
 		9080C9D4E61BBEAB56722CA8 /* Pods_chuckthemonk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */; };
 		D11F2834D1D35F7D5286FEF7 /* Pods_chuckthemonkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */; };
 		FB9D3ABB336C799AB35986DD /* Pods_chuckthemonkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730DBBDB3BFAF2F7CB8E0B4 /* Pods_chuckthemonkTests.framework */; };
@@ -59,6 +60,7 @@
 		4EA4FF8221EFD5C8005E2291 /* chuckthemonkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chuckthemonkUITests.swift; sourceTree = "<group>"; };
 		4EA4FF8421EFD5C8005E2291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessLayer.swift; sourceTree = "<group>"; };
 		6E28F4C68CB1B74FFD2312A8 /* Pods-chuckthemonkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkTests/Pods-chuckthemonkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D3C99BF3A02723A397A69B /* Pods-chuckthemonkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkUITests/Pods-chuckthemonkUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		4EA4FF5E21EFD5C5005E2291 /* chuckthemonk */ = {
 			isa = PBXGroup;
 			children = (
+				4EB8B57421F39E2D007FFA75 /* DataAccess */,
 				4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */,
 				4EA4FF6121EFD5C5005E2291 /* ViewController.swift */,
 				4EA4FF6321EFD5C5005E2291 /* Main.storyboard */,
@@ -161,6 +164,14 @@
 			path = chuckthemonkUITests;
 			sourceTree = "<group>";
 		};
+		4EB8B57421F39E2D007FFA75 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
 		CA4E63BE8BF2CA16EC4AB39E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +194,7 @@
 				4EA4FF5921EFD5C5005E2291 /* Frameworks */,
 				4EA4FF5A21EFD5C5005E2291 /* Resources */,
 				83466D16B829A2B3C0D63AE7 /* [CP] Embed Pods Frameworks */,
+				30C95EE1031BBA9B4B3AD031 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +315,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		30C95EE1031BBA9B4B3AD031 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HockeySDK/HockeySDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4344BAA25FE6B9EFE5FCF455 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,8 +368,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -343,8 +379,10 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -405,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA4FF6821EFD5C5005E2291 /* chuckthemonk.xcdatamodeld in Sources */,
+				4EB8B57621F39E5A007FFA75 /* DataAccessLayer.swift in Sources */,
 				4EA4FF6221EFD5C5005E2291 /* ViewController.swift in Sources */,
 				4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */,
 			);
