@@ -11,18 +11,12 @@ import Alamofire
 
 public class DataAccessLayer {
     
-    Alamofire.request("https://httpbin.org/get").responseJSON { response in
-    print("Request: \(String(describing: response.request))")   // original url request
-    print("Response: \(String(describing: response.response))") // http url response
-    print("Result: \(response.result)")                         // response serialization result
+    var comics : [Comic]? = nil
     
-    if let json = response.result.value {
-    print("JSON: \(json)") // serialized json response
+    public func getArchived(completion: @escaping ([Comic]) -> Void) {
+        AF.request("https://chuck-the-monk.firebaseio.com/archives.json").responseDecodable { (response: DataResponse<[Comic]>) in
+            self.comics = response.result.value
+            completion(self.comics!)
+        }
     }
-    
-    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-    print("Data: \(utf8Text)") // original server data as UTF8 string
-    }
-    }
-    
 }

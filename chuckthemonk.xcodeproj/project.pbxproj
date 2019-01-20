@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2EF72221F4EBE90090A944 /* ArchivedItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72121F4EBE80090A944 /* ArchivedItemsTableViewController.swift */; };
 		4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */; };
-		4EA4FF6221EFD5C5005E2291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF6121EFD5C5005E2291 /* ViewController.swift */; };
 		4EA4FF6521EFD5C5005E2291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF6321EFD5C5005E2291 /* Main.storyboard */; };
 		4EA4FF6821EFD5C5005E2291 /* chuckthemonk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF6621EFD5C5005E2291 /* chuckthemonk.xcdatamodeld */; };
 		4EA4FF6A21EFD5C8005E2291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF6921EFD5C8005E2291 /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		4EA4FF8321EFD5C8005E2291 /* chuckthemonkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF8221EFD5C8005E2291 /* chuckthemonkUITests.swift */; };
 		4EA4FF9121EFD726005E2291 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */; };
 		4EB8B57621F39E5A007FFA75 /* DataAccessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */; };
+		4EB8B57921F4A7C2007FFA75 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8B57821F4A7C2007FFA75 /* Comic.swift */; };
 		9080C9D4E61BBEAB56722CA8 /* Pods_chuckthemonk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */; };
 		D11F2834D1D35F7D5286FEF7 /* Pods_chuckthemonkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */; };
 		FB9D3ABB336C799AB35986DD /* Pods_chuckthemonkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730DBBDB3BFAF2F7CB8E0B4 /* Pods_chuckthemonkTests.framework */; };
@@ -45,9 +46,9 @@
 		2B638B2A28D85F69F49CD9AE /* Pods-chuckthemonk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonk.release.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk.release.xcconfig"; sourceTree = "<group>"; };
 		3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8D825BDA6A15838D0A3993 /* Pods-chuckthemonk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2EF72121F4EBE80090A944 /* ArchivedItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedItemsTableViewController.swift; sourceTree = "<group>"; };
 		4EA4FF5C21EFD5C5005E2291 /* chuckthemonk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chuckthemonk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EA4FF6121EFD5C5005E2291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EA4FF6421EFD5C5005E2291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EA4FF6721EFD5C5005E2291 /* chuckthemonk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chuckthemonk.xcdatamodel; sourceTree = "<group>"; };
 		4EA4FF6921EFD5C8005E2291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		4EA4FF8421EFD5C8005E2291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessLayer.swift; sourceTree = "<group>"; };
+		4EB8B57821F4A7C2007FFA75 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		6E28F4C68CB1B74FFD2312A8 /* Pods-chuckthemonkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkTests/Pods-chuckthemonkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D3C99BF3A02723A397A69B /* Pods-chuckthemonkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkUITests/Pods-chuckthemonkUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,9 +135,10 @@
 		4EA4FF5E21EFD5C5005E2291 /* chuckthemonk */ = {
 			isa = PBXGroup;
 			children = (
+				4EB8B57721F4A763007FFA75 /* Models */,
 				4EB8B57421F39E2D007FFA75 /* DataAccess */,
 				4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */,
-				4EA4FF6121EFD5C5005E2291 /* ViewController.swift */,
+				4E2EF72121F4EBE80090A944 /* ArchivedItemsTableViewController.swift */,
 				4EA4FF6321EFD5C5005E2291 /* Main.storyboard */,
 				4EA4FF6921EFD5C8005E2291 /* Assets.xcassets */,
 				4EA4FF6B21EFD5C8005E2291 /* LaunchScreen.storyboard */,
@@ -170,6 +173,14 @@
 				4EB8B57521F39E5A007FFA75 /* DataAccessLayer.swift */,
 			);
 			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		4EB8B57721F4A763007FFA75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EB8B57821F4A7C2007FFA75 /* Comic.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CA4E63BE8BF2CA16EC4AB39E /* Frameworks */ = {
@@ -444,7 +455,8 @@
 			files = (
 				4EA4FF6821EFD5C5005E2291 /* chuckthemonk.xcdatamodeld in Sources */,
 				4EB8B57621F39E5A007FFA75 /* DataAccessLayer.swift in Sources */,
-				4EA4FF6221EFD5C5005E2291 /* ViewController.swift in Sources */,
+				4EB8B57921F4A7C2007FFA75 /* Comic.swift in Sources */,
+				4E2EF72221F4EBE90090A944 /* ArchivedItemsTableViewController.swift in Sources */,
 				4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
