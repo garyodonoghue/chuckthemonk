@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E2EF72221F4EBE90090A944 /* ArchivedIItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72121F4EBE80090A944 /* ArchivedIItemsTableViewController.swift */; };
+		4E2EF72221F4EBE90090A944 /* ArchivedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */; };
 		4E2EF72C21F4F57B0090A944 /* CommonDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72B21F4F57B0090A944 /* CommonDataAccess.swift */; };
 		4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */; };
 		4EA4FF6521EFD5C5005E2291 /* Archived.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF6321EFD5C5005E2291 /* Archived.storyboard */; };
@@ -47,7 +47,7 @@
 		2B638B2A28D85F69F49CD9AE /* Pods-chuckthemonk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonk.release.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk.release.xcconfig"; sourceTree = "<group>"; };
 		3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8D825BDA6A15838D0A3993 /* Pods-chuckthemonk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk.debug.xcconfig"; sourceTree = "<group>"; };
-		4E2EF72121F4EBE80090A944 /* ArchivedIItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedIItemsTableViewController.swift; sourceTree = "<group>"; };
+		4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedItemsViewController.swift; sourceTree = "<group>"; };
 		4E2EF72B21F4F57B0090A944 /* CommonDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataAccess.swift; sourceTree = "<group>"; };
 		4EA4FF5C21EFD5C5005E2291 /* chuckthemonk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chuckthemonk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA4FF6321EFD5C5005E2291 /* Archived.storyboard */,
-				4E2EF72121F4EBE80090A944 /* ArchivedIItemsTableViewController.swift */,
+				4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -491,7 +491,7 @@
 				4EA4FF6821EFD5C5005E2291 /* chuckthemonk.xcdatamodeld in Sources */,
 				4EB8B57621F39E5A007FFA75 /* ArchivedDataAccess.swift in Sources */,
 				4EB8B57921F4A7C2007FFA75 /* Comic.swift in Sources */,
-				4E2EF72221F4EBE90090A944 /* ArchivedIItemsTableViewController.swift in Sources */,
+				4E2EF72221F4EBE90090A944 /* ArchivedItemsViewController.swift in Sources */,
 				4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */,
 				4E2EF72C21F4F57B0090A944 /* CommonDataAccess.swift in Sources */,
 			);
