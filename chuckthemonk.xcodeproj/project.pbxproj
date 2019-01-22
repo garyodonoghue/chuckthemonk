@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E2EF72221F4EBE90090A944 /* ArchivedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */; };
-		4E2EF72C21F4F57B0090A944 /* CommonDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2EF72B21F4F57B0090A944 /* CommonDataAccess.swift */; };
+		4E89F3FE21F7BB03004EB698 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E89F3FD21F7BB02004EB698 /* DataAccess.swift */; };
 		4E9695D821F6839400E8114F /* ComicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E9695D721F6839400E8114F /* ComicView.xib */; };
 		4E9695DA21F6843500E8114F /* ComicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9695D921F6843500E8114F /* ComicView.swift */; };
 		4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */; };
@@ -19,7 +19,6 @@
 		4EA4FF7821EFD5C8005E2291 /* chuckthemonkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF7721EFD5C8005E2291 /* chuckthemonkTests.swift */; };
 		4EA4FF8321EFD5C8005E2291 /* chuckthemonkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FF8221EFD5C8005E2291 /* chuckthemonkUITests.swift */; };
 		4EA4FF9121EFD726005E2291 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */; };
-		4EB8B57621F39E5A007FFA75 /* ArchivedDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8B57521F39E5A007FFA75 /* ArchivedDataAccess.swift */; };
 		4EB8B57921F4A7C2007FFA75 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB8B57821F4A7C2007FFA75 /* Comic.swift */; };
 		9080C9D4E61BBEAB56722CA8 /* Pods_chuckthemonk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */; };
 		D11F2834D1D35F7D5286FEF7 /* Pods_chuckthemonkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */; };
@@ -50,7 +49,7 @@
 		3B2634E0544B08B665CB8F78 /* Pods_chuckthemonk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8D825BDA6A15838D0A3993 /* Pods-chuckthemonk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonk/Pods-chuckthemonk.debug.xcconfig"; sourceTree = "<group>"; };
 		4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedItemsViewController.swift; sourceTree = "<group>"; };
-		4E2EF72B21F4F57B0090A944 /* CommonDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataAccess.swift; sourceTree = "<group>"; };
+		4E89F3FD21F7BB02004EB698 /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		4E9695D721F6839400E8114F /* ComicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicView.xib; sourceTree = "<group>"; };
 		4E9695D921F6843500E8114F /* ComicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicView.swift; sourceTree = "<group>"; };
 		4EA4FF5C21EFD5C5005E2291 /* chuckthemonk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chuckthemonk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +66,6 @@
 		4EA4FF8221EFD5C8005E2291 /* chuckthemonkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chuckthemonkUITests.swift; sourceTree = "<group>"; };
 		4EA4FF8421EFD5C8005E2291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA4FF9021EFD726005E2291 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4EB8B57521F39E5A007FFA75 /* ArchivedDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedDataAccess.swift; sourceTree = "<group>"; };
 		4EB8B57821F4A7C2007FFA75 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		6E28F4C68CB1B74FFD2312A8 /* Pods-chuckthemonkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkTests/Pods-chuckthemonkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		75AD4FB1EA6FA7656AC4EFA4 /* Pods_chuckthemonkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chuckthemonkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +150,6 @@
 		4E2EF72A21F4F55F0090A944 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4E2EF72B21F4F57B0090A944 /* CommonDataAccess.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -211,7 +208,7 @@
 		4EB8B57421F39E2D007FFA75 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
-				4EB8B57521F39E5A007FFA75 /* ArchivedDataAccess.swift */,
+				4E89F3FD21F7BB02004EB698 /* DataAccess.swift */,
 			);
 			path = DataAccess;
 			sourceTree = "<group>";
@@ -496,11 +493,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA4FF6821EFD5C5005E2291 /* chuckthemonk.xcdatamodeld in Sources */,
-				4EB8B57621F39E5A007FFA75 /* ArchivedDataAccess.swift in Sources */,
+				4E89F3FE21F7BB03004EB698 /* DataAccess.swift in Sources */,
 				4EB8B57921F4A7C2007FFA75 /* Comic.swift in Sources */,
 				4E2EF72221F4EBE90090A944 /* ArchivedItemsViewController.swift in Sources */,
 				4EA4FF6021EFD5C5005E2291 /* AppDelegate.swift in Sources */,
-				4E2EF72C21F4F57B0090A944 /* CommonDataAccess.swift in Sources */,
 				4E9695DA21F6843500E8114F /* ComicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,8 +12,7 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    private let dataAccess = ArchivedDataAccess()
-    private let commonDataAccess = CommonDataAccess()
+    private let dataAccess = DataAccess()
     
     private var comics: [Comic]? = nil
     
@@ -38,7 +37,7 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
         for comic in self.comics! {
             let comicInstance: ComicView = Bundle.main.loadNibNamed("ComicView", owner: self, options: nil)?.first as! ComicView
                 comicInstance.comicTitle.text = comic.title
-                self.commonDataAccess.getImage(byUrl: comic.imageUrl, completion: { data in
+                self.dataAccess.getImage(byUrl: comic.imageUrl, completion: { data in
                     comicInstance.comicImage.image = UIImage(data: data)
                 })
             

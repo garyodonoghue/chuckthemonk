@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-public class ArchivedDataAccess {
+public class DataAccess {
     
     var comics : [Comic]? = nil
     
@@ -17,6 +17,12 @@ public class ArchivedDataAccess {
         AF.request("https://chuck-the-monk.firebaseio.com/archives.json").responseDecodable { (response: DataResponse<[Comic]>) in
             self.comics = response.result.value
             completion(self.comics!)
+        }
+    }
+    
+    public func getImage(byUrl url: String, completion : @escaping (Data) -> Void){
+        AF.request(url).response { response in
+            completion(response.data!)
         }
     }
 }
