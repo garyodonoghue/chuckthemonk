@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Comic : Decodable{
+public class Comic : Decodable {
     
     let title : String;
     let imageUrl : String;

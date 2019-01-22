@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComicView" customModule="chuckthemonk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-9V-MeA">
+                    <rect key="frame" x="298" y="26" width="71" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="ST4-wC-CnQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dob-w9-bQc">
+                    <rect key="frame" x="37" y="67" width="593" height="271"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="271" id="Jws-as-6oj"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dob-w9-bQc" firstAttribute="top" secondItem="zaJ-9V-MeA" secondAttribute="bottom" constant="-1" id="3VB-bL-9RP"/>
+                <constraint firstItem="zaJ-9V-MeA" firstAttribute="centerX" secondItem="dob-w9-bQc" secondAttribute="centerX" id="6vQ-aG-QtU"/>
+                <constraint firstItem="dob-w9-bQc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="Tst-6a-UFq"/>
+                <constraint firstItem="dob-w9-bQc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bpS-si-Joj"/>
+                <constraint firstItem="dob-w9-bQc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="67" id="iP2-qF-oVW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="comicImage" destination="dob-w9-bQc" id="V3Y-V4-TVK"/>
+                <outlet property="comicTitle" destination="zaJ-9V-MeA" id="dE5-fr-9vI"/>
+            </connections>
+        </view>
+    </objects>
+</document>
