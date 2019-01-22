@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kqi-Wt-KZw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Yji-3K-4Gz">
+            <objects>
+                <viewController id="Kqi-Wt-KZw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5v-U9-LoS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdN-fV-x0k">
+                                <rect key="frame" x="103" y="181" width="168" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Isb-zx-h4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <state key="normal" title="Archived Issues">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fw4-4e-Vky" kind="presentation" id="IlR-PA-ZU0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKTHEMONK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-p4-XLc">
+                                <rect key="frame" x="75" y="71" width="225" height="28"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sbL-p4-XLc" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="75" id="Dad-dw-p02"/>
+                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="sbL-p4-XLc" secondAttribute="trailing" constant="75" id="EIW-eB-7W5"/>
+                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="hdN-fV-x0k" secondAttribute="trailing" constant="104" id="QfU-NL-hWn"/>
+                            <constraint firstItem="sbL-p4-XLc" firstAttribute="top" secondItem="Zfy-Kl-XwG" secondAttribute="top" constant="51" id="mae-hf-LCq"/>
+                            <constraint firstItem="hdN-fV-x0k" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="103" id="suU-ey-Iw5"/>
+                            <constraint firstItem="hdN-fV-x0k" firstAttribute="top" secondItem="sbL-p4-XLc" secondAttribute="bottom" constant="82" id="zzR-ff-98V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zfy-Kl-XwG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iM4-9H-q7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="171.36431784107947"/>
+        </scene>
+        <!--ArchivedItems-->
+        <scene sceneID="Qf0-Nb-Ra9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Archived" storyboardName="ArchivedItems" id="Fw4-4e-Vky" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3A3-8h-nrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="51"/>
+        </scene>
+    </scenes>
+</document>
