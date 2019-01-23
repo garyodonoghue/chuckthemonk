@@ -29,23 +29,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="HrA-nT-PIH">
-                                <rect key="frame" x="169" y="464" width="37" height="37"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FAO-7U-VFz" secondAttribute="bottom" constant="269" id="6gR-O8-Odl"/>
-                            <constraint firstItem="HrA-nT-PIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="169" id="8f9-FF-Arj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FAO-7U-VFz" secondAttribute="trailing" constant="62" id="Iie-DX-fmj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JfO-ZW-q8n" secondAttribute="bottom" constant="203" id="QCX-CE-vvG"/>
                             <constraint firstItem="JfO-ZW-q8n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="RSg-un-3p6"/>
                             <constraint firstItem="FAO-7U-VFz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="ZKl-18-Ub5"/>
                             <constraint firstItem="FAO-7U-VFz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="hYJ-ha-7TE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HrA-nT-PIH" secondAttribute="bottom" constant="166" id="kHc-GC-5tJ"/>
                             <constraint firstItem="JfO-ZW-q8n" firstAttribute="top" secondItem="FAO-7U-VFz" secondAttribute="bottom" constant="13" id="o8J-aV-Zhw"/>
-                            <constraint firstItem="HrA-nT-PIH" firstAttribute="top" secondItem="JfO-ZW-q8n" secondAttribute="bottom" id="qFa-Cz-Yd2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HrA-nT-PIH" secondAttribute="trailing" constant="169" id="rpc-Gr-2yx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JfO-ZW-q8n" secondAttribute="trailing" constant="69" id="yt3-qK-l7d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
