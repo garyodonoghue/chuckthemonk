@@ -13,6 +13,7 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
     
     private let dataAccess = DataAccess()
     private var index = 0
+    private var filledIndex = 0
     private var comics: [Comic]? = nil
     
     override func viewDidLoad() {
@@ -41,7 +42,8 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
         for i in index ..< index+5 {
             let comicInstance: ComicView = Bundle.main.loadNibNamed("ComicView", owner: self, options: nil)?.first as! ComicView
             
-            comicInstance.comicTitle.text = self.comics![i].title
+            guard let title = comicInstance.comicTitle else { break }
+            title.text = self.comics![i].title
             self.dataAccess.getImage(byUrl: self.comics![i].imageUrl, completion: { data in
                     comicInstance.comicImage.image = UIImage(data: data)
                     comicInstance.activityIndicator.stopAnimating()
@@ -55,12 +57,13 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
     
     // Add the 5 subviews (one for each comic) to the scrollview
     func updateComicsScrollView(comics : [ComicView]) {
-        var index = 0
         for comic in comics {
-            comic.frame = CGRect(x: view.frame.width * CGFloat(index), y: 0, width: view.frame.width, height: view.frame.height)
+            comic.frame = CGRect(x: view.frame.width * CGFloat(self.filledIndex), y: 0, width: view.frame.width, height: view.frame.height)
             scrollView.addSubview(comic)
-            index = index+1
+            self.filledIndex = self.filledIndex+1
         }
+        
+        scrollView.contentSize = CGSize(width: CGFloat(view.frame.width) * CGFloat(self.filledIndex), height: view.frame.height)
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
