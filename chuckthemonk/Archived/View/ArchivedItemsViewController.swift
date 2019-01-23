@@ -9,11 +9,10 @@ import UIKit
 
 class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
     
-    @IBOutlet weak var pageController: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
     
     private let dataAccess = DataAccess()
-    
+    private var index = 0
     private var comics: [Comic]? = nil
     
     override func viewDidLoad() {
@@ -22,23 +21,30 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
         UIDevice.current.setValue(value, forKey: "orientation")
         scrollView.delegate = self
         
-        dataAccess.getArchived(completion: { result in
-            self.comics = result
-            self.pageController.numberOfPages = self.comics!.count
-            self.pageController.currentPage = 0
-            self.setupComicScrollView(comics: self.createComics())
+        dataAccess.getArchived(completion: { comicMetadata in
+            self.comics = comicMetadata
+            self.setupScrollView()
+            self.updateComicsScrollView(comics: self.createComics())
         })
-        
     }
     
+    private func setupScrollView(){
+        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        scrollView.contentSize = CGSize(width: view.frame.width * 5, height: view.frame.height)
+        scrollView.isPagingEnabled = true
+    }
+    
+    // lazy load comic images 5 at a time
     func createComics() -> [ComicView] {
         var comicsArray : [ComicView] = []
         
-        for comic in self.comics! {
+        for i in index ..< index+5 {
             let comicInstance: ComicView = Bundle.main.loadNibNamed("ComicView", owner: self, options: nil)?.first as! ComicView
-                comicInstance.comicTitle.text = comic.title
-                self.dataAccess.getImage(byUrl: comic.imageUrl, completion: { data in
+            
+            comicInstance.comicTitle.text = self.comics![i].title
+            self.dataAccess.getImage(byUrl: self.comics![i].imageUrl, completion: { data in
                     comicInstance.comicImage.image = UIImage(data: data)
+                    comicInstance.activityIndicator.stopAnimating()
                 })
             
             comicsArray.append(comicInstance)
@@ -47,14 +53,13 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
         return comicsArray
     }
     
-    func setupComicScrollView(comics : [ComicView]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(comics.count), height: view.frame.height)
-        scrollView.isPagingEnabled = true
-        
-        for i in 0 ..< comics.count {
-            comics[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
-            scrollView.addSubview(comics[i])
+    // Add the 5 subviews (one for each comic) to the scrollview
+    func updateComicsScrollView(comics : [ComicView]) {
+        var index = 0
+        for comic in comics {
+            comic.frame = CGRect(x: view.frame.width * CGFloat(index), y: 0, width: view.frame.width, height: view.frame.height)
+            scrollView.addSubview(comic)
+            index = index+1
         }
     }
 
@@ -64,5 +69,13 @@ class ArchivedItemsViewController: UIViewController, UIScrollViewDelegate {
 
     override var shouldAutorotate: Bool {
         return true
+    }
+    
+    //when the user lifts their finger
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
+        self.index = self.index+1
+        if(self.index % 5 == 0){
+            self.updateComicsScrollView(comics: self.createComics())
+        }
     }
 }

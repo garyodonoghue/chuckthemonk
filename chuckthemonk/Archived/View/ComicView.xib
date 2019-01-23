@@ -25,6 +25,9 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Oob-JF-iuk">
+                    <rect key="frame" x="315" y="199" width="37" height="37"/>
+                </activityIndicatorView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dob-w9-bQc">
                     <rect key="frame" x="37" y="82" width="593" height="271"/>
                     <constraints>
@@ -35,13 +38,18 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="dob-w9-bQc" firstAttribute="top" secondItem="zaJ-9V-MeA" secondAttribute="bottom" constant="8" id="3VB-bL-9RP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oob-JF-iuk" secondAttribute="trailing" constant="315" id="5Ct-mj-trQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oob-JF-iuk" secondAttribute="bottom" constant="139" id="5aR-zv-wQh"/>
                 <constraint firstItem="zaJ-9V-MeA" firstAttribute="centerX" secondItem="dob-w9-bQc" secondAttribute="centerX" id="6vQ-aG-QtU"/>
                 <constraint firstItem="zaJ-9V-MeA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="9ja-vu-C5L"/>
+                <constraint firstItem="Oob-JF-iuk" firstAttribute="top" secondItem="zaJ-9V-MeA" secondAttribute="bottom" constant="125" id="Ddw-JO-1Y2"/>
                 <constraint firstItem="dob-w9-bQc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="Tst-6a-UFq"/>
                 <constraint firstItem="dob-w9-bQc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bpS-si-Joj"/>
+                <constraint firstItem="Oob-JF-iuk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="315" id="r4f-aN-kWn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="activityIndicator" destination="Oob-JF-iuk" id="eSf-YA-nc9"/>
                 <outlet property="comicImage" destination="dob-w9-bQc" id="V3Y-V4-TVK"/>
                 <outlet property="comicTitle" destination="zaJ-9V-MeA" id="dE5-fr-9vI"/>
             </connections>

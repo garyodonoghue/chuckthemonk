@@ -74,9 +74,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KLi-u1-F5n">
-                                <rect key="frame" x="168" y="394" width="39" height="37"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-ZH-tvH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
@@ -99,9 +96,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KLi-u1-F5n" firstAttribute="top" secondItem="DgB-Gr-p0Y" secondAttribute="top" constant="330" id="0C1-sr-tBf"/>
                             <constraint firstAttribute="trailing" secondItem="ETL-ZH-tvH" secondAttribute="trailing" id="0JM-OL-GqF"/>
-                            <constraint firstItem="ETL-ZH-tvH" firstAttribute="centerX" secondItem="KLi-u1-F5n" secondAttribute="centerX" id="GVa-iu-2DU"/>
                             <constraint firstItem="ETL-ZH-tvH" firstAttribute="leading" secondItem="mJh-WK-QfN" secondAttribute="leading" id="jaN-2P-kRQ"/>
                             <constraint firstItem="ETL-ZH-tvH" firstAttribute="bottom" secondItem="DgB-Gr-p0Y" secondAttribute="bottom" id="oOZ-ZS-B83"/>
                             <constraint firstItem="ETL-ZH-tvH" firstAttribute="top" secondItem="DgB-Gr-p0Y" secondAttribute="top" id="qeQ-3s-6OO"/>
@@ -117,7 +112,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="pageController" destination="KLi-u1-F5n" id="GTS-PG-vD2"/>
                         <outlet property="scrollView" destination="ETL-ZH-tvH" id="dM5-g9-juZ"/>
                     </connections>
                 </viewController>

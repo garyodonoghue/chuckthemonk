@@ -12,4 +12,5 @@ class ComicView: UIView {
 
     @IBOutlet weak var comicTitle: UILabel!
     @IBOutlet weak var comicImage: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 }
