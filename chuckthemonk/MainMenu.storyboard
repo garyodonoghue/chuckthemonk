@@ -40,20 +40,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="happy_chuck" translatesAutoresizingMaskIntoConstraints="NO" id="xXe-bC-eG4">
-                                <rect key="frame" x="75" y="366" width="240" height="128"/>
+                                <rect key="frame" x="100" y="367" width="175" height="125"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xXe-bC-eG4" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="75" id="AKK-RR-lPw"/>
+                            <constraint firstItem="xXe-bC-eG4" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="100" id="AKK-RR-lPw"/>
                             <constraint firstItem="sbL-p4-XLc" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="75" id="Dad-dw-p02"/>
                             <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="sbL-p4-XLc" secondAttribute="trailing" constant="75" id="EIW-eB-7W5"/>
                             <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="hdN-fV-x0k" secondAttribute="trailing" constant="104" id="QfU-NL-hWn"/>
-                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="bottom" secondItem="xXe-bC-eG4" secondAttribute="bottom" constant="173" id="aRy-0d-dMk"/>
-                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="xXe-bC-eG4" secondAttribute="trailing" constant="60" id="g3E-jY-E5Q"/>
+                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="bottom" secondItem="xXe-bC-eG4" secondAttribute="bottom" constant="175" id="aRy-0d-dMk"/>
+                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="xXe-bC-eG4" secondAttribute="trailing" constant="100" id="g3E-jY-E5Q"/>
                             <constraint firstItem="sbL-p4-XLc" firstAttribute="top" secondItem="Zfy-Kl-XwG" secondAttribute="top" constant="51" id="mae-hf-LCq"/>
                             <constraint firstItem="hdN-fV-x0k" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="103" id="suU-ey-Iw5"/>
-                            <constraint firstItem="xXe-bC-eG4" firstAttribute="top" secondItem="hdN-fV-x0k" secondAttribute="bottom" constant="135" id="wgH-gS-SoZ"/>
+                            <constraint firstItem="xXe-bC-eG4" firstAttribute="top" secondItem="hdN-fV-x0k" secondAttribute="bottom" constant="136" id="wgH-gS-SoZ"/>
                             <constraint firstItem="hdN-fV-x0k" firstAttribute="top" secondItem="sbL-p4-XLc" secondAttribute="bottom" constant="82" id="zzR-ff-98V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zfy-Kl-XwG"/>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iM4-9H-q7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="-752"/>
+            <point key="canvasLocation" x="285.60000000000002" y="-752.47376311844084"/>
         </scene>
         <!--Archived-->
         <scene sceneID="PHN-NN-QPy">
@@ -104,7 +104,7 @@
                         <viewLayoutGuide key="safeArea" id="DgB-Gr-p0Y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Archived" id="tau-8n-FXF">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="dVC-HC-AS5">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="dVC-HC-AS5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="bN9-KN-pNd" kind="unwind" unwindAction="unwindToMainMenuWithSegue:" id="3v6-fi-Z1v"/>
@@ -147,7 +147,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="12" height="12"/>
         <image name="happy_chuck" width="225" height="225"/>
     </resources>
 </document>
