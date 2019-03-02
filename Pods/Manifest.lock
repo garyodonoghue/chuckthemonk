@@ -63,6 +63,11 @@ PODS:
   - HockeySDK (5.1.4):
     - HockeySDK/DefaultLib (= 5.1.4)
   - HockeySDK/DefaultLib (5.1.4)
+  - iOSSnapshotTestCase (5.0.2):
+    - iOSSnapshotTestCase/SwiftSupport (= 5.0.2)
+  - iOSSnapshotTestCase/Core (5.0.2)
+  - iOSSnapshotTestCase/SwiftSupport (5.0.2):
+    - iOSSnapshotTestCase/Core
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -77,6 +82,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - HockeySDK (~> 5.1.4)
+  - iOSSnapshotTestCase
   - SwiftyJSON
 
 SPEC REPOS:
@@ -93,6 +99,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - HockeySDK
+    - iOSSnapshotTestCase
     - leveldb-library
     - nanopb
     - SwiftyJSON
@@ -110,10 +117,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   HockeySDK: 15afe6bc0a5bfe3a531fd73dbf082095f37dac3b
+  iOSSnapshotTestCase: 2d51aa06775e95cecb0a1fb9c5c159ccd1dd4596
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 05f4feee6f07204e0c1fe306f969e0411843b994
+PODFILE CHECKSUM: af8526961b3aefad1919d904d975729f2589287b
 
 COCOAPODS: 1.5.3

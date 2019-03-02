@@ -3,7 +3,6 @@
 
 target 'chuckthemonk' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for chuckthemonk
   pod 'Firebase/Core'
@@ -19,7 +18,9 @@ target 'chuckthemonk' do
   end
 
   target 'chuckthemonkUITests' do
+    use_frameworks!
     inherit! :search_paths
+    pod 'iOSSnapshotTestCase'
     # Pods for testing
   end
 

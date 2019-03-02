@@ -1,4 +1,4 @@
-framework module Pods_chuckthemonk {
+module Pods_chuckthemonk {
   umbrella header "Pods-chuckthemonk-umbrella.h"
 
   export *
