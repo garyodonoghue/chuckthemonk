@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kqi-Wt-KZw">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,46 +15,47 @@
             <objects>
                 <viewController id="Kqi-Wt-KZw" customClass="MainViewController" customModule="chuckthemonk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G5v-U9-LoS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdN-fV-x0k">
-                                <rect key="frame" x="103" y="181" width="168" height="50"/>
-                                <color key="backgroundColor" white="0.76102186032863839" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="103" y="175" width="460" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Isb-zx-h4h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Archived">
                                     <color key="titleColor" white="0.12393632629107978" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="WID-dx-Ako" kind="show" id="hFb-1o-5sP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCKTHEMONK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-p4-XLc">
-                                <rect key="frame" x="75" y="71" width="225" height="28"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHUCK THE MONK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbL-p4-XLc">
+                                <rect key="frame" x="61" y="54" width="544" height="31.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="happy_chuck" translatesAutoresizingMaskIntoConstraints="NO" id="xXe-bC-eG4">
-                                <rect key="frame" x="100" y="367" width="175" height="125"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xXe-bC-eG4" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="100" id="AKK-RR-lPw"/>
-                            <constraint firstItem="sbL-p4-XLc" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="75" id="Dad-dw-p02"/>
-                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="sbL-p4-XLc" secondAttribute="trailing" constant="75" id="EIW-eB-7W5"/>
+                            <constraint firstItem="sbL-p4-XLc" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="61" id="Dad-dw-p02"/>
+                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="sbL-p4-XLc" secondAttribute="trailing" constant="62" id="EIW-eB-7W5"/>
                             <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="hdN-fV-x0k" secondAttribute="trailing" constant="104" id="QfU-NL-hWn"/>
-                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="bottom" secondItem="xXe-bC-eG4" secondAttribute="bottom" constant="175" id="aRy-0d-dMk"/>
-                            <constraint firstItem="Zfy-Kl-XwG" firstAttribute="trailing" secondItem="xXe-bC-eG4" secondAttribute="trailing" constant="100" id="g3E-jY-E5Q"/>
-                            <constraint firstItem="sbL-p4-XLc" firstAttribute="top" secondItem="Zfy-Kl-XwG" secondAttribute="top" constant="51" id="mae-hf-LCq"/>
+                            <constraint firstItem="sbL-p4-XLc" firstAttribute="top" secondItem="Zfy-Kl-XwG" secondAttribute="top" constant="54" id="mae-hf-LCq"/>
                             <constraint firstItem="hdN-fV-x0k" firstAttribute="leading" secondItem="Zfy-Kl-XwG" secondAttribute="leading" constant="103" id="suU-ey-Iw5"/>
-                            <constraint firstItem="xXe-bC-eG4" firstAttribute="top" secondItem="hdN-fV-x0k" secondAttribute="bottom" constant="136" id="wgH-gS-SoZ"/>
-                            <constraint firstItem="hdN-fV-x0k" firstAttribute="top" secondItem="sbL-p4-XLc" secondAttribute="bottom" constant="82" id="zzR-ff-98V"/>
+                            <constraint firstItem="hdN-fV-x0k" firstAttribute="top" secondItem="sbL-p4-XLc" secondAttribute="bottom" constant="89.5" id="zzR-ff-98V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zfy-Kl-XwG"/>
                     </view>
@@ -71,11 +72,11 @@
             <objects>
                 <viewController storyboardIdentifier="ArchivedItems" id="R4Y-Rm-n0F" customClass="ArchivedItemsViewController" customModule="chuckthemonk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mJh-WK-QfN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETL-ZH-tvH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="343"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsI-w7-TY6">
                                         <rect key="frame" x="0.0" y="0.0" width="667" height="328"/>
@@ -103,9 +104,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DgB-Gr-p0Y"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Archived" id="tau-8n-FXF">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="dVC-HC-AS5">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="bN9-KN-pNd" kind="unwind" unwindAction="unwindToMainMenuWithSegue:" id="3v6-fi-Z1v"/>
                             </connections>
@@ -126,11 +128,11 @@
                 <navigationController storyboardIdentifier="Archived" title="Archived" automaticallyAdjustsScrollViewInsets="NO" id="WID-dx-Ako" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tBz-MY-abH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,7 +148,4 @@
             <point key="canvasLocation" x="1303.8980509745129" y="-751.20000000000005"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="happy_chuck" width="225" height="225"/>
-    </resources>
 </document>
