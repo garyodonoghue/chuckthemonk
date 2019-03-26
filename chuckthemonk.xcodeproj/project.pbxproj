@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		0575E90D491489F4F5689F05 /* Pods-chuckthemonkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkTests/Pods-chuckthemonkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		09AE364E5901F3DA8B4EB381 /* Pods-chuckthemonkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chuckthemonkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chuckthemonkUITests/Pods-chuckthemonkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DB2322E224AAA3A00117B71 /* chuckthemonk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chuckthemonk.entitlements; sourceTree = "<group>"; };
 		4E2EF72121F4EBE80090A944 /* ArchivedItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivedItemsViewController.swift; sourceTree = "<group>"; };
 		4E89F3FD21F7BB02004EB698 /* DataAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		4E89F3FF21F7C591004EB698 /* MainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		4EA4FF5E21EFD5C5005E2291 /* chuckthemonk */ = {
 			isa = PBXGroup;
 			children = (
+				0DB2322E224AAA3A00117B71 /* chuckthemonk.entitlements */,
 				4E2EF72521F4F1210090A944 /* Resources */,
 				4E2EF72321F4F0990090A944 /* Archived */,
 				4EA4FF5F21EFD5C5005E2291 /* AppDelegate.swift */,
@@ -304,6 +306,11 @@
 				TargetAttributes = {
 					4EA4FF5B21EFD5C5005E2291 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					4EA4FF7221EFD5C8005E2291 = {
 						CreatedOnToolsVersion = 10.1;
@@ -661,6 +668,7 @@
 			baseConfigurationReference = DC305EAA2E6D6CC78F103C34 /* Pods-chuckthemonk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = chuckthemonk/chuckthemonk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76V9Z2L66N;
 				INFOPLIST_FILE = chuckthemonk/Resources/Info.plist;
@@ -680,6 +688,7 @@
 			baseConfigurationReference = C385369B2A8BF15175C8269F /* Pods-chuckthemonk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = chuckthemonk/chuckthemonk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76V9Z2L66N;
 				INFOPLIST_FILE = chuckthemonk/Resources/Info.plist;
